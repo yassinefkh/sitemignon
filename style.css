@@ -1,0 +1,138 @@
+*:not(span) {
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+a {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: light;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem; /* Ajouter de l'espace autour des éléments */
+    background-color: #f5f5f5; /* Optionnel, pour donner un fond */
+    border-bottom: 1px solid #ccc; /* Optionnel, pour séparer visuellement le header */
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+
+}
+
+a:hover {
+    color: #666;
+    font-size: larger;
+    transition: 0.5s;
+}
+
+h2 {
+    padding: 3rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem; /* Espacement horizontal entre les liens */
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="48"><path d="M480 711 240 471l43-43 197 198 197-197 43 43-240 239Z" style="fill: white;"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    border: none;
+    border-radius: 2px;
+    margin-right: 1rem;
+    padding: 1rem;
+    padding-right: 2rem;
+}
+
+article {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+article:nth-of-type(even) {
+    background-color: #f0f0f0; /* Fond gris pour les articles pairs */
+}
+
+article img {
+    max-width: 150px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+article img:hover {
+    transform: scale(3);
+    transition: 5s;
+}
+
+article:nth-of-type(even) img {
+    grid-column: 1; /* Image dans la première colonne pour les articles pairs */
+}
+
+article p {
+    grid-column: 1;
+    padding: 0 25%;
+    text-align: justify;
+    justify-self: center;
+    align-self: center;
+}
+
+article:nth-of-type(even) p {
+    grid-column: 2; /* Texte dans la deuxième colonne pour les articles pairs */
+    text-align: justify;
+    justify-self: center;
+    align-self: center;
+}
+
+
+h2:nth-of-type(even) {
+    background-color: #f0f0f0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Assure que le body occupe toute la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Permet au contenu principal de prendre tout l'espace disponible */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    margin-top: auto;
+}
+
